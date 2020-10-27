@@ -1,7 +1,7 @@
 var scene = new THREE.Scene()
 
-// const O_CAM = true
-const O_CAM = false
+const O_CAM = true
+// const O_CAM = false
 
 var camera = new THREE.PerspectiveCamera(50, window.innerWidth/window.innerHeight, 0.1, 2000);
 
@@ -41,8 +41,8 @@ document.body.appendChild(renderer.domElement);
 // var axesHelper = new THREE.AxesHelper(50)
 // scene.add(axesHelper)
 
-const BOID_COUNT = 50;
-const visualRange = 20;
+const BOID_COUNT = 100;
+const visualRange = 40;
 
 var boid_geom = new THREE.SphereGeometry(4, 15, 15)
 var boid_mat = new THREE.MeshBasicMaterial({color: Math.random() * 0xffffff})
